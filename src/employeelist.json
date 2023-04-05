@@ -1,0 +1,49 @@
+{
+   "employees":[
+      {
+         "id": 1,
+         "emplID": "EMP012",
+         "position": "Sr. Warden",
+         "location": "Test Lab",
+         "firstName":"Neeraj",
+         "lastName":"Jain",
+         "phone":"9900223234",
+         "imgUrl": "assets/employee_1.jpeg",
+         "assignment": "Blood Sample Report",
+         "realTime": "00:25:00",
+         "timePeriod": "1 hr",
+         "status": "inProgress",
+         "remark": "Staff is not sufficent"
+      },
+      {
+         "id": 2,
+         "emplID": "EMP013",
+         "position": "Warden",
+         "location": "X-Ray Room",
+         "firstName":"Suresh",
+         "lastName":"Shukals",
+         "phone":"9900223234",
+         "imgUrl": "assets/employee_2.jpeg",
+         "assignment": "X-Ray Report",
+         "realTime": "00:30:00",
+         "timePeriod": "1 hr",
+         "status": "completed",
+         "remark": "Only one oxygen cylender left"
+      },
+      {
+         "id": 3,
+         "emplID": "EMP014",
+         "position": "Clerk",
+         "location": "Blood Bank",
+         "firstName":"Vinita",
+         "lastName":"Dasai",
+         "phone":"9900223234",
+         "imgUrl": "assets/employee_3.jpeg",
+         "assignment": "Visit Blood Bank",
+         "realTime": "-00:45:00",
+         "timePeriod": "1 hr",
+         "status": "delay",
+         "remark": "Requirement is not clear"
+      }
+   ]
+}
