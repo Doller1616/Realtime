@@ -21,15 +21,15 @@ function App() {
   return (<Layout>
     <Typography variant='h2'> Heading </Typography>
     <Grid container spacing={2} >
-    <Grid item md={3}>
+    <Grid item md={12}>
       <EmployeeList activeEmp={empDetails?.id} selectedEmpCb={handleSelectedEmp} />
     </Grid>
 
-    <Grid item md={9}>
-      <StatusBar empDetails={empDetails} />
-      <EmployeeInfo empDetails={empDetails} />
-      <TaskViewAssign empDetails={empDetails} />
-    </Grid>
+    {/* <Grid item md={9}>
+      <StatusBar empDetails={empDetails} /> */}
+      {/* <EmployeeInfo empDetails={empDetails} /> */}
+      {/* <TaskViewAssign empDetails={empDetails} />
+    </Grid> */}
      
 
     </Grid>

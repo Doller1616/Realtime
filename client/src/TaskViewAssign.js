@@ -24,9 +24,9 @@ const shiftI = [
   '12:00 AM',
 ];
 
-export default function TaskViewAssign() {
+export default function TaskViewAssign({employee, fn}) {
   return (
-    <Box component={Paper} marginTop={1}>
+    <Box component={Paper}>
       <Typography variant='subtitle2' lineHeight={1} display='flex' alignItems='center'
         padding={0.5} fontWeight='bold'>
         <ChecklistOutlinedIcon color='primary' fontSize='small' /> &nbsp;
@@ -37,7 +37,7 @@ export default function TaskViewAssign() {
         <Stepper activeStep={2} alternativeLabel>
           {shiftI.map((label) => (
             <Step key={label}>
-              <StepLabel>{label}</StepLabel>
+              <StepLabel onClick={() => fn(label, employee)}>{label}</StepLabel>
             </Step>
           ))}
         </Stepper>
