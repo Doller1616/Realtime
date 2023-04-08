@@ -27,7 +27,7 @@ function createRealtimeServer(app) {
     app.post('/task-update', postUpdateTask);
 
     server.listen(PORT, () => {
-        console.log('Server listening on port', PORT);
+        console.log(`Locak Socket Server: http://localhost:${PORT}`);
     });
 
 }
