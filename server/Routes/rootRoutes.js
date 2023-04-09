@@ -9,7 +9,8 @@ initilization();
 
 
 function postRoutes() {
-    Router.post('/subscribe', addOnController.subscribePushNotification)
+    Router.post('/subscribe', addOnController.subscribePushNotification);
+    Router.post('/send-notification', addOnController.sendPushNotification);
 }
 
 module.exports = Router;

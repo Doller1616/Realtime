@@ -1,7 +1,7 @@
 const Express = require('express');
 const cors = require("cors");
 const Mongoose = require('mongoose');
-const createRealtimeServer = require('./realtime-server');
+const createRealtimeServer = require('./RealtimeServer/realtime-server');
 const rootRoutes = require('./Routes/rootRoutes');
 const app = Express();
 

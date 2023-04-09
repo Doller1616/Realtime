@@ -1,6 +1,6 @@
 const http = require('http');
 const io = require('socket.io'); // v2
-const { employeeList } = require('./emp-data');
+const { employeeList } = require('../emp-data');
 const PORT = 4000;
 
 function createRealtimeServer(app) {
