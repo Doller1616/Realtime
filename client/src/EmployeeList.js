@@ -10,6 +10,7 @@ import CurrentTasks from './CurrentTasks';
 import { BASEURL } from './apiConfig';
 import io from 'socket.io-client';
 const socket = io('http://localhost:4000');
+let count = 0;
 
 export default function EmployeeList() {
   const [open, setOpen] = React.useState(false);
@@ -39,6 +40,17 @@ export default function EmployeeList() {
     socket.on('employee-list', (data) => {
       setEmployees(data?.employees);
     });
+
+    socket.on('connect_error', (error) => {
+      if (error.message === 'xhr poll error' || error.message === 'polling error') {
+        console.error('Error connecting to server:', error.message);
+      } else {
+        console.error('Error connecting to server:', error);
+      }
+      count++;
+      (count == 5) && socket.disconnect()
+    });
+
     return () => {
       employees.length && socket.disconnect()
     }

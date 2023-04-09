@@ -40,7 +40,7 @@ function App() {
       method: 'POST',
       body: JSON.stringify({
         subscription: subscription,
-        userId: ''
+        userId: 'EMP012'
       }),
       headers: {
         'content-type': 'application/json'
