@@ -14,7 +14,7 @@ exports.subscribePushNotification = async (req, res) => {
       throw new Error('Subscriber not found!')
     }
     res.sendStatus(200);
-    console.log('Subscriber Added', result);
+    console.log('Subscriber Added');
 };
 
 exports.sendPushNotification = async (req, res) => {
